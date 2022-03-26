@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@500&display=swap");
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  height: 100%;
+}
+#bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: url("agnis-leznins-Lf6iovoj-Qg-unsplash.png") no-repeat center
+    center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -moz-background-size: cover;
+  z-index: -1;
+}
+
+#bg:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("Pngtree_rain_5623786.png");
+  animation: rain 0.4s linear infinite;
+}
+@keyframes rain {
+  0% {
+    background-position: 0 0;
+    opacity: 30%;
+  }
+
+  100% {
+    background-position: 8% 80%;
+    opacity: 30%;
+  }
+}
+header {
+  height: 2px;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  display: block;
+  position: relative;
+  top: 40px;
+  z-index: 2;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+h1 {
+  color: #fff;
+  text-align: center;
+  display: block;
+  position: relative;
+  top: 90px;
+  font-size: 3em;
+  font-family: "Teko", sans-serif;
+  font-weight: 400;
+  letter-spacing: 4.5px;
+  margin: 0;
+  line-height: 0;
+  text-shadow: rgba(39, 35, 35, 0.37) 3px 3px 6px, rgb(204, 51, 51) 3px 3px 6px;
+}
+.typewriter h2 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid rgb(255, 255, 255); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: auto; /* Gives that scrolling effect as the typing happens */
+  animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
+  width: auto;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  text-align: center;
+  border-right: 0.1em solid black;
+  position: relative;
+  top: 120px;
+  font-size: 1.25em;
+  font-family: "Red Hat Mono", monospace;
+  text-shadow: rgba(0, 0, 0, 0.2) 1px 4px 4px, rgba(0, 0, 0, 0.2) 1px 4px 4px;
+  overflow: hidden;
+}
+/* The typing effect */
+@keyframes typing {
+  from {
+    max-width: 0;
+  }
+  to {
+    max-width: 100%;
+  }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(255, 255, 255);
+  }
+}
+
+#btn-group {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20px;
+  z-index: 10;
+}
+.button {
+  font-family: "Red Hat Mono", monospace;
+  display: block;
+  position: relative;
+  margin-top: 1.3em;
+  color: #fff;
+  font-size: 1em;
+  text-decoration: none;
+  width: 300px;
+  padding: 15px 30px;
+  text-align: center;
+  border: 2px solid rgb(241, 125, 125);
+  top: 330px;
+  clip-path: polygon(5% 0, 95% 0, 100% 50%, 95% 100%, 5% 100%, 0 50%);
+  background-color: rgb(243, 87, 87);
+  background-repeat: no-repeat;
+  opacity: 85%;
+  transition: ease-in-out 300ms;
+}
+a.button:hover {
+  background-color: rgb(204, 51, 51);
+}
+
+a.button:active {
+  transform: scale(0.99);
+}
+nav.navbar {
+  height: 50px;
+  padding: 1em 2em;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#name {
+  text-align: center;
+  position: relative;
+  top: 100px;
+  font-family: "Red Hat Mono", monospace;
+  color: #fff;
+  font-size: 0.6em;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  display: inline;
+  margin-right: 1.5em;
+}
+nav li:last-child {
+  margin-right: 0;
+}
+.navbar {
+  overflow: hidden;
+  width: 100%;
+  position: absolute;
+}
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  transition: ease-in-out 300ms;
+}
+nav.navbar a:hover {
+  color: rgb(204, 51, 51);
+}
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -415px;
+}
+footer,
+.push {
+  height: 50px;
+}
+/*Responsiveness*/
+@media screen and (min-width: 602px) {
+  .wrapper {
+    min-height: 110%;
+  }
+}
+@media screen and (max-width: 600px) {
+  img {
+    height: 150px;
+    width: 150px;
+  }
+  .typewriter h2 {
+    font-size: 1.07em;
+    margin-left: 5px;
+    margin-right: 5px;
+    position: relative;
+    top: 130px;
+  }
+  .button {
+    height: 25px;
+    line-height: 25px;
+    font-size: 1.05em;
+  }
+  #btn-group {
+    position: relative;
+    top: -20px;
+  }
+  .wrapper {
+    margin-bottom: -420px;
+    min-height: 100%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .typewriter h2 {
+    font-size: 0.95em;
+    margin-left: 5px;
+    margin-right: 5px;
+    position: relative;
+    top: 120px;
+  }
+  .button {
+    width: 280px;
+    height: 18px;
+    line-height: 17px;
+    margin-bottom: -5px;
+  }
+  #btn-group {
+    top: -40px;
+  }
+  .wrapper {
+    margin-bottom: -365px;
+  }
+}
+@media screen and (max-width: 320px) {
+  img {
+    height: 100px;
+    width: 100px;
+  }
+  h1 {
+    top: 80px;
+    font-size: 2.5em;
+  }
+  .typewriter h2 {
+    font-size: 0.78em;
+    margin-left: 5px;
+    margin-right: 5px;
+    position: relative;
+    top: 110px;
+  }
+  .button {
+    width: 240px;
+    height: 13px;
+    line-height: 13px;
+    margin-bottom: -5px;
+  }
+  #btn-group {
+    top: -105px;
+  }
+  .wrapper {
+    margin-bottom: -330px;
+  }
+}
