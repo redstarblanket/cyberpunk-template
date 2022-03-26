@@ -274,3 +274,21 @@ footer,
     margin-bottom: -330px;
   }
 }
+@media screen and (max-height: 613px) {
+  .wrapper {
+    margin-bottom: -400px;
+    min-height: 120%;
+  }
+}
+@media screen and (max-height: 440px) {
+  .wrapper {
+    margin-bottom: -400px;
+    min-height: 170%;
+  }
+}
+@media screen and (max-height: 310px) {
+  .wrapper {
+    margin-bottom: -400px;
+    min-height: 240%;
+  }
+}
