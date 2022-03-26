@@ -277,18 +277,18 @@ footer,
 @media screen and (max-height: 613px) {
   .wrapper {
     margin-bottom: -400px;
-    min-height: 120%;
+    min-height: 150%;
   }
 }
 @media screen and (max-height: 440px) {
   .wrapper {
     margin-bottom: -400px;
-    min-height: 170%;
+    min-height: 200%;
   }
 }
 @media screen and (max-height: 310px) {
   .wrapper {
     margin-bottom: -400px;
-    min-height: 240%;
+    min-height: 270%;
   }
 }
