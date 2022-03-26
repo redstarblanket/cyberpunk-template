@@ -221,7 +221,7 @@ footer,
   }
   .wrapper {
     margin-bottom: -420px;
-    min-height: 100%;
+    min-height: 120%;
   }
 }
 @media screen and (max-width: 375px) {
