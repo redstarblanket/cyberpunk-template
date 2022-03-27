@@ -283,7 +283,7 @@ footer,
 @media screen and (max-height: 440px) {
   .wrapper {
     margin-bottom: -400px;
-    min-height: 225%;
+    min-height: 215%;
   }
 }
 @media screen and (max-height: 310px) {
